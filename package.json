@@ -1,0 +1,8 @@
+{
+  "name": "nasa-website",
+  "version": "1.0.0",
+  "description": "A fake Nasa website using pure CSS.",
+  "main": "index.js",
+  "author": "Gerardo Valencia Rivero",
+  "license": "MIT"
+}

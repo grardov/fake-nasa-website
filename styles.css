@@ -19,6 +19,7 @@ body {
   font-family: var(--font-family-base);
   font-weight: 300;
   background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 h1,
@@ -117,7 +118,7 @@ h4 {
 }
 
 .header .sub-heading {
-  line-height: 1.25;
+  line-height: 1.75;
   color: #eee;
   margin-bottom: 1rem;
 }
@@ -188,10 +189,20 @@ h4 {
     line-height: 1.25;
   }
 
-  .header .sub-heading { font-size: .9rem; }
+  .header .sub-heading {
+    font-size: .9rem;
+    line-height: 1.25;
+  }
 
   .header-content .header-button {
     padding: 12px 18px;
     font-size: .9rem;
   }
+}
+
+.container {
+  max-width: 960px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
 }

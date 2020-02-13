@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  background-color: #000;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./images/header.jpg');
+  background-size: cover;
+}
+
+.header::before {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+}
+
+.header .navigation {
+  position: relative;
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.header .navigation .brand-logo { width: 100px; }
+
+.header .navigation .brand-logo img { width: 100%; }
+
+.header .navigation .navigation-wrapper {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.header .navigation .navigation-wrapper li {
+  list-style-type: none;
+  margin-right: 1.25rem;
+}
+
+.header .navigation .navigation-wrapper li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .navigation .navigation-wrapper li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header .header-content {
+  position: relative;
+  width: 720px;
+  height: calc(100% - 80px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateY(-80px);
+}
+
+.header .heading {
+  font-size: 2.5rem;
+  color: #eee;
+  margin-bottom: 1rem;
+}
+
+.header .sub-heading {
+  line-height: 1.25;
+  color: #eee;
+  margin-bottom: 1rem;
+}
+
+.header-content .header-button {
+  border: none;
+  padding: 15px 25px;
+  background-color:  #3073FC;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  transition: .2s all ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.header-content .header-button:focus { outline-style: none; }
+
+.header-content .header-button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 3px 4px rgba(0,0,0,0.5);
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 50px;
+  right: 50%;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  animation: moveArrow 2s infinite;
+}
+
+@keyframes moveArrow {
+  0% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}

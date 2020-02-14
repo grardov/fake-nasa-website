@@ -392,3 +392,15 @@ h4 {
 
   .preview-article-landscape p { display: none; }
 }
+
+.button-more-stories {
+  display: block;
+  background-color: #20262E;
+  color: var(--color-white-font);
+  padding: 20px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  margin: .8rem 0;
+}

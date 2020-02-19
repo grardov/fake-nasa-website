@@ -465,3 +465,105 @@ h4 {
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
+
+.missions { width: 100%; }
+
+.missions h3 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: var(--color-white-font);
+  text-align: center;
+}
+
+.missions p {
+  font-size: .9rem;
+  color: var(--color-white-font);
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.missions-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 450px;
+  margin: 3rem 0;
+}
+
+.missions-slider {
+  height: calc(100% + 15px);
+  display: flex;
+  flex: 1;
+  overflow-y: scroll;
+  overflow-y: hidden;
+}
+
+.missions-slider .missions-items {
+  display: flex;
+  flex-direction: row;
+  transform: translateX(calc(100vw - 85vw));
+  padding-right: calc(100vw - 1152px);
+}
+
+.missions-slider .missions-items .mission-card:not(:last-child) { margin-right: 1rem; }
+
+.mission-card {
+  min-width: 400px;
+  min-height: 450px;
+  border-radius: 4px;
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.mission-card::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mission-card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.mission-card-content-end {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.mission-card span {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+.mission-card .mission-card-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: var(--color-white-font);
+}
+
+.mission-card .mission-card-label {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .missions-wrapper { height: 300px; }
+
+  .mission-card {
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+}
